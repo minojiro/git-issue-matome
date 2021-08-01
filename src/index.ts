@@ -5,7 +5,7 @@ import repos from './repos'
 
 const dayIssues: string[][] = []
 
-const startAt = dayjs().startOf('month')
+const startAt = dayjs().add(-7, 'days').startOf('month')
 repos.forEach(repo => {
   console.log(repo)
   gitlog({
